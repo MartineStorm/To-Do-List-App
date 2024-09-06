@@ -14,19 +14,21 @@ function addTask() {
     li.textContent = taskText;
 
     const RemoveBtn = document.createElement('button');
-    RemoveBtn.textContent = 'Remove'
-    RemoveBtn.className = 'remove-btn';
-    RemoveBtn.onclick = function() {
+    removeBtn.textContent = 'Remove'
+    removeBtn.className = 'remove-btn';
+    removeBtn.onclick = function() {
         taskList.removeChild(li);
     };
 
     li.appendChild(removeBtn);
 
-    li.oneclick = function() {
+    li.onclick = function() {
         li.classList.toggle('completed');
     };
 
     taskList.appendChild(li);
+
+    taskInput.value = '';
 }
 
 addTaskBtn.addEventListener('click', addTask);
