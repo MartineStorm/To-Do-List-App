@@ -1,9 +1,13 @@
+
+console.log('Script loaded');
+
 const taskInput = document.getElementById('task-input');
 const addTaskBtn = document.getElementById('add-task-btn');
 const taskList = document.getElementById('task-list');
 
 function addTask() {
     const taskText = taskInput.value.trim();
+    console.log('Task to add:', taskText);
 
     if (taskText === '') {
         alert('Please enter a task.');
@@ -13,8 +17,8 @@ function addTask() {
     const li = document.createElement('li');
     li.textContent = taskText;
 
-    const RemoveBtn = document.createElement('button');
-    removeBtn.textContent = 'Remove'
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'remove'
     removeBtn.className = 'remove-btn';
     removeBtn.onclick = function() {
         taskList.removeChild(li);
