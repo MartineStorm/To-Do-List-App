@@ -89,6 +89,21 @@ li:hover {
     transform: scale(1.05);
 }
 
+.share-btn {
+    background-color: #0084ff;
+    color:white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.share-button:hover {
+    background-color: #005bb5;
+}
+
 .completed {
     text-decoration: line-through;
     color: #888;
