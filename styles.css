@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'poppins', sans-serif;
     background-color: #f0f0f5;
     display: flex;
     justify-content: center;
@@ -12,61 +12,61 @@ body {
 .container {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 400px;
+    padding: 30px;
     box-sizing: border-box;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
     color: #333;
 }
 
 #task-input {
-    width: calc(100% - 22px);
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
 #add-task-btn {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px
     font-size: 16px;
     color: white;
-    background-color: #007bff;
+    background-color: #28a745;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-top: 10px;
-    display: inline-block;
+    transition: background 0.3s ease;
 }
 
 #add-task-btn:hover {
-    background: #0056b3;
+    background: #218838;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    text-align: left;
 }
 
 li {
     background: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
+    margin: 8px 0;
+    padding: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
 }
 
@@ -75,17 +75,17 @@ li:hover {
 }
 
 .remove-btn {
-    background: #dc3545;
+    background: #ff4d4d;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .remove-btn:hover {
-    background: #c82333;
+    background: #c03e3e;
     transform: scale(1.05);
 }
 
