@@ -4,7 +4,7 @@ console.log('Script loaded');
 const taskInput = document.getElementById('task-input');
 const addTaskBtn = document.getElementById('add-task-btn');
 const taskList = document.getElementById('task-list');
-const sharebtn = document.getElementById('share-btn');
+const shareBtn = document.getElementById('share-btn');
 
 function addTask() {
     const taskText = taskInput.value.trim();
@@ -48,7 +48,7 @@ function getTaskListString() {
     let tasks = [];
     const taskItems = taskList.querySelectorAll('li');
     taskItems.forEach(item => {
-        tasks.push(item-textContent.replace('remove', '').trim());
+        tasks.push(item.textContent.replace('remove', '').trim());
     });
     return tasks.join(', ');
 }
@@ -63,4 +63,4 @@ function shareOnMessenger() {
     }
  }
 
- sharebtn.addEventListener('click', shareOnMessenger);
+ ShareBtn.addEventListener('click', shareOnMessenger);
