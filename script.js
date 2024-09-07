@@ -54,6 +54,8 @@ function getTaskListString() {
 }
 
 function shareOnMessenger() {
+    console.log('Share button clicked');
+    window.open('https://www.messenger.com', '_blank');
     const taskString = getTaskListString();
     if (taskString) {
         const messsengerShareUrl = `https://www.messenger.com/t/?text=${encodeURIComponent("My To-Do List: " + taskString)}`;
