@@ -30,7 +30,7 @@ ul {
 }
 
 li {
-    background: #f4f4f4
+    background: #f4f4f4;
     margin: 5px 0;
     padding: 10px;
     display: flex;
@@ -40,8 +40,8 @@ li {
 }
 
 .remove-btn {
-    background: #ff4c4c
-    color: none;
+    background: #ff4c4c;
+    color: white;
     padding: 5px 10px;
     cursor: pointer;
 }
