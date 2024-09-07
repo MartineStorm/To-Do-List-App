@@ -59,6 +59,7 @@ function shareOnMessenger() {
     const taskString = getTaskListString();
     if (taskString) {
         const messsengerShareUrl = `https://www.messenger.com/t/?text=${encodeURIComponent("My To-Do List: " + taskString)}`;
+        console.log('Messenger URL:', messengerShareUrl);
         window.open(messengerShareUrl, '_blank');
     } else {
         alert('Your to-do list is empty. Add some tasks before sharing!');

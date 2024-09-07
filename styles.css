@@ -74,7 +74,7 @@ li:hover {
     background-color: #f1f1f1;
 }
 
-.remove-btn {
+.remove-Btn {
     background: #ff4d4d;
     color: white;
     border: none;
@@ -84,12 +84,12 @@ li:hover {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.remove-btn:hover {
+.remove-Btn:hover {
     background: #c03e3e;
     transform: scale(1.05);
 }
 
-.share-btn {
+.share-Btn {
     background-color: #0084ff;
     color:white;
     padding: 10px 20px;
