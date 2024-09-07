@@ -4,7 +4,7 @@ console.log('Script loaded');
 const taskInput = document.getElementById('task-input');
 const addTaskBtn = document.getElementById('add-task-btn');
 const taskList = document.getElementById('task-list');
-const shareBtn = document.getElementById('share-btn');
+const shareBtn = document.getElementById('share-Btn');
 
 function addTask() {
     const taskText = taskInput.value.trim();
@@ -56,11 +56,11 @@ function getTaskListString() {
 function shareOnMessenger() {
     const taskString = getTaskListString();
     if (taskString) {
-        const messsengerShareUrl = 'https://www.facebook.com/dialog/send?app_id=YOUR_APP_ID&link=https://example.com&redirect_uri=https://example.com&message=${encodeURIComponent(message)}';
+        const messsengerShareUrl = `https://www.messenger.com/t/?text=${encodeURIComponent("My To-Do List: " + taskString)}`;
         window.open(messengerShareUrl, '_blank');
     } else {
         alert('Your to-do list is empty. Add some tasks before sharing!');
     }
  }
 
- ShareBtn.addEventListener('click', shareOnMessenger);
+ shareBtn.addEventListener('click', shareOnMessenger);
