@@ -56,7 +56,7 @@ function getTaskListString() {
 function shareOnMessenger() {
     const taskString = getTaskListString();
     if (taskString) {
-        const messsengerShareUrl = `https://www.messenger.com/t/?text=${encodeURIComponent("My To-Do List: " + taskString)}`;
+        const messsengerShareUrl = 'https://www.facebook.com/dialog/send?app_id=YOUR_APP_ID&link=https://example.com&redirect_uri=https://example.com&message=${encodeURIComponent(message)}';
         window.open(messengerShareUrl, '_blank');
     } else {
         alert('Your to-do list is empty. Add some tasks before sharing!');
